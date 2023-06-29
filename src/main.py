@@ -18,4 +18,4 @@ location_list.append(location.location("Mensa_Pasing", "rl", 120, ["apa15-0rl", 
 
 for location in location_list:
     jsonConverter.json_creator(location, location.name)
-jsonConverter.json_creator(location, "combined")
+jsonConverter.json_creator(location_list, "combined")
