@@ -1,6 +1,5 @@
 import requests
 import location
-import time
 
 
 def get_location_data(loc: location):
