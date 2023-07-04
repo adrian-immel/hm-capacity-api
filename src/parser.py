@@ -1,11 +1,9 @@
 import requests
 import location
-import time
 
 
 def get_location_data(loc: location):
     url = "http://graphite-kom.srv.lrz.de/render/?from=-1hours&target=ap.ap*-?" + loc.lrz_subdistrict_id + "*.ssid.*&format=json"
-    time.sleep(1) # sleep to prevent timeouts from Api
     data_list = requests.get(url, timeout=30).json()
     if not data_list or None:
         raise ConnectionError("Could not get or parse the json from LRZ")
