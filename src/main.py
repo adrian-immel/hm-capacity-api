@@ -25,7 +25,7 @@ def job():
     location_list.append(location("Mensa_Pasing", "rl", 120, ["apa15-0rl", "apa18-0rl"]))
     for location_object in location_list:
         jsonConverter.json_creator(location_object, location_object.name)
-    jsonConverter.json_creator(location_list, "combined")
+    jsonConverter.json_creator(location_list, "all")
     print("job run at", time.time())
 
 

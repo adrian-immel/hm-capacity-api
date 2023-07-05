@@ -25,8 +25,14 @@ The data is available for the following locations:
 To get the data for a location you have to send a GET request to the API with the path hm-capacity-api/LOCATION.json.
 Alternatively you can send a GET request to the API with the path hm-capacity-api/all.json to get the data for all locations.
 
+Example for a GET request to get all the data for the current semester:
+```http
+GET https://YOURDOMAIN/hm-capacity-api/all.json
+```
+
 The Attributes of the JSON are:
 For example for the location "Mensa_Lothstr.":
+
 ```json
 {
     "name": "Mensa_Lothstr.",
