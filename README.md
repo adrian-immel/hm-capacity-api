@@ -22,8 +22,8 @@ The data is available for the following locations:
 + Mensa_Lothstr.
 + Mensa Pasing
 
-To get the data for a location you have to send a GET request to the API with the path capacity-api/LOCATION.json.
-Alternatively you can send a GET request to the API with the path capacity-api/all.json to get the data for all locations.
+To get the data for a location you have to send a GET request to the API with the path hm-capacity-api/LOCATION.json.
+Alternatively you can send a GET request to the API with the path hm-capacity-api/all.json to get the data for all locations.
 
 The Attributes of the JSON are:
 For example for the location "Mensa_Lothstr.":
