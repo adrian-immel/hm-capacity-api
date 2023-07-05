@@ -4,7 +4,10 @@ import time
 import jsonConverter
 import sys
 
-
+"""
+This method runs every 5 minutes.
+Its the main method of the program to get data and create the json files.
+"""
 @repeat(every(5).minutes)
 def job():
     location_list: list = []
@@ -29,8 +32,10 @@ def job():
 if __name__ == "__main__":
     job()
     try:
+        # check if the program is started in docker-mode and run the scheduler every 10 seconds
         while sys.argv[1] == "docker-mode":
             run_pending()
             time.sleep(10)
     except IndexError:
+        # this is needed for the program to exit if not started in docker-mode
         exit(0)
