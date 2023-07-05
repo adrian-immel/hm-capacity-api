@@ -27,8 +27,8 @@ def job():
 
 
 if __name__ == "__main__":
+    job()
     try:
-        job()
         while sys.argv[1] == "docker-mode":
             run_pending()
             time.sleep(10)
