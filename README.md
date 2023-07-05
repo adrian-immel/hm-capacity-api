@@ -9,6 +9,8 @@ The API can be hosted on GitHub Pages and is updated via the GitHub Actions scri
 You can host the API on your own server. Just use the provided docker image to tun it on your server.
 The docker updates the data every 5 minutes, but do to a bug at LRZ we have to use a data-pint that is 5 minutes old or else the provided data would not be very accurate.
 Be careful the docker does not provide a webserver. You have to use a webserver like nginx to provide the API via HTTP.
+You can use the example docker-compose.yml to run the API Container on your server. \
+In the container the files are located at /hm-dates-api/.
 
 ## API
 The API provides you with the data in a JSON format.
@@ -20,11 +22,17 @@ The data is available for the following locations:
 + Mensa_Lothstr.
 + Mensa Pasing
 
-To get the data for a location you have to send a GET request to the API with the path capacity-api/LOCATION.json.
-Alternatively you can send a GET request to the API with the path capacity-api/all.json to get the data for all locations.
+To get the data for a location you have to send a GET request to the API with the path hm-capacity-api/LOCATION.json.
+Alternatively you can send a GET request to the API with the path hm-capacity-api/all.json to get the data for all locations.
+
+Example for a GET request to get all the data for the current semester:
+```http
+GET https://YOURDOMAIN/hm-capacity-api/all.json
+```
 
 The Attributes of the JSON are:
 For example for the location "Mensa_Lothstr.":
+
 ```json
 {
     "name": "Mensa_Lothstr.",
