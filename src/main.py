@@ -18,10 +18,10 @@ def job():
     # library Pasing
     location_list.append(location("Bibliothek_L_Bau", "rl", 200, ["apa14-1rl", "apa15-1rl"]))
     # Cafeteria Karlstr.
-    location_list.append(location("Cafeteria_Karlstr.", "rf", 100, ["apa06-4rf"]))
+    location_list.append(location("Cafeteria_Karlstr", "rf", 100, ["apa06-4rf"]))
     # mensa's
     location_list.append(
-        location("Mensa_Lothstr.", "rh", 280, ["apa02-1rh", "apa03-1rh", "apa05-0rh", "apa06-0rh"]))
+        location("Mensa_Lothstr", "rh", 280, ["apa02-1rh", "apa03-1rh", "apa05-0rh", "apa06-0rh"]))
     location_list.append(location("Mensa_Pasing", "rl", 120, ["apa15-0rl", "apa18-0rl"]))
     for location_object in location_list:
         jsonConverter.json_creator(location_object, location_object.name)
