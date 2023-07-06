@@ -18,20 +18,20 @@ The data is available for the following locations:
 + Bibliothek_H_Bau
 + Bibliothek_I_Bau
 + Bibliothek_L_Bau
-+ Cafeteria_Karlstr.
-+ Mensa_Lothstr.
++ Cafeteria_Karlstr
++ Mensa_Lothstr
 + Mensa Pasing
 
 To get the data for a location you have to send a GET request to the API with the path hm-capacity-api/LOCATION.json.
 Alternatively you can send a GET request to the API with the path hm-capacity-api/all.json to get the data for all locations.
 
-Example for a GET request to get all the data for the current semester:
+Example for a GET request to get the data for all locations:
 ```http
-GET https://YOURDOMAIN/hm-capacity-api/all.json
+GET https://YOURDOMAIN/hm-capacity-api/Mensa_Lothstr.json
 ```
 
 The Attributes of the JSON are:
-For example for the location "Mensa_Lothstr.":
+For example for the location "Mensa_Lothstr":
 
 ```json
 {
