@@ -25,7 +25,7 @@ The data is available for the following locations:
 To get the data for a location you have to send a GET request to the API with the path hm-capacity-api/LOCATION.json.
 Alternatively you can send a GET request to the API with the path hm-capacity-api/all.json to get the data for all locations.
 
-Example for a GET request to get the data for all locations:
+Example for a GET request to get the data for the location Mensa_Lothstr:
 ```http
 GET https://YOURDOMAIN/hm-capacity-api/Mensa_Lothstr.json
 ```
