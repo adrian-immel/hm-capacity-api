@@ -17,5 +17,5 @@ services:
       - "443:443"
     volumes:
       - ./nginx/ssl:/etc/nginx/ssl
-      - data:/usr/share/nginx/html/capacity-api
+      - data:/usr/share/nginx/html/hm-capacity-api
 
